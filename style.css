@@ -1,7 +1,43 @@
-section {
-    padding: 10px 0;
+* {
+    font-family: Calibri;
+    /* font-size: 100% */
 }
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(112, 255, 255);
+    /* padding: 1px; */
+    border: 1px solid black;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 10px;
+}
+
 section div {
     display: inline-block;
-    margin: 0 10px;
+    padding: 0 5px;
+}
+.options {
+    margin: 15px auto;
+}
+thead {
+    background-color: rgb(112, 255, 255);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    
+    column-width: 150px;
+    text-align: center;
 }
