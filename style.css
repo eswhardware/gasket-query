@@ -1,0 +1,7 @@
+section {
+    padding: 10px 0;
+}
+section div {
+    display: inline-block;
+    margin: 0 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Empaques</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/data.js"></script>
+    
+</head>
+<body onload="popSystemsDropdown()">
+    <header><h1>Consulta de Empaques</h1></header>
+    <section class="options">
+        <div>
+            <label for="systems-dropdown">Seleccione el sistema: </label>
+            <select name="systems-dropdown" id="systems-dropdown">
+                <option value="none">Selecione un valor</option>
+            </select>
+        </div>
+        <div>
+            <label for="glass-thickness">Seleccione el espesor del vidrio: </label>
+            <select name="glass-thickness" id="glass-thickness">
+                <option value="none">Selecione espesor</option>
+            </select>
+        </div>
+        <div>
+            <label for="tested-checkbox">Configuración probada: </label>
+            <input type="checkbox" name="tested-checkbox" id="tested-checkbox">
+        </div>
+    </section>
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sistema</th>
+                    <th>Espesor</th>
+                    <th>Empaque Interno</th>
+                    <th>Empaque Externo</th>
+                    <th>Probado</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>            
+        </table>
+    </section>
+
+
+
+    <script src="scripts/helper-functions.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
