@@ -10,12 +10,19 @@ systemsDropdown.addEventListener('change', () => {
 glassDropdown.addEventListener('change', () => {
     const thicknessValue = glassDropdown.value;
     const systemObject = extractSystemObjects()
-    systemObject.forEach(object => {
-        if (object.glassThickness === thicknessValue){
-            deleteRows()
-            popTable([object])
-        }
-    })
+    if (thicknessValue !== 'none'){
+        systemObject.forEach(object => {
+            if (object.glassThickness === thicknessValue){
+                deleteRows()
+                popTable([object])
+            }
+        })
+    }
+    else {
+        deleteRows()
+        popTable(systemObject)
+    }
+    
     // console.log(`.${thicknessValue}`)
     // const tableRow = document.getElementById(`${thicknessValue}`);
 
