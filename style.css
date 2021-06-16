@@ -1,6 +1,7 @@
 * {
     font-family: Calibri;
     color: #333435;
+    max-width:1300px;
     /* font-size: 100% */
 }
 
@@ -30,12 +31,12 @@ section div {
 thead, th {
     background-color: #80BCE1;
     padding: 7.5px;
-
-}
+    }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 td, th {
