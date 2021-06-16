@@ -2,11 +2,12 @@ const systemsDropdown = document.getElementById('systems-dropdown');
 const glassDropdown = document.getElementById('glass-thickness');
 const tableBody = document.querySelector('tbody');
 const originalTable = tableBody.innerHTML;
-const configCheckbox = document.getElementById('tested-checkbox')
+const configCheckbox = document.getElementById('tested-checkbox');
+
 
 function popSystemsDropdown() {
     let systemNames = new Set;
-
+    
     for (let object of data){
         systemNames.add(object.system)
     }
@@ -21,7 +22,6 @@ function popSystemsDropdown() {
 function popGlassThickness(){
     const selectedSystem = systemsDropdown.value;
     let systemObject = [];
-    
     for (let element of data){
         if (element.system === selectedSystem){
             let option = document.createElement('option');
