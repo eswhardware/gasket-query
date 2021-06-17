@@ -45,3 +45,18 @@ td, th {
     column-width: 150px;
     text-align: center;
 }
+
+aside {
+    /* padding: 10px; */
+    margin: 10px auto;
+}
+
+a {
+    padding: 5px 10px;
+    color: #333435;
+    font-size: 1em;
+}
+
+a:hover {
+    background-color: #DBB75A;
+}
